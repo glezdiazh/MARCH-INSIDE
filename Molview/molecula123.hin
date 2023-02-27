@@ -1,0 +1,46 @@
+-2.112537 -2.961294 5.861411e-007 3 2 a 3 a 9 s
+-0.1874485 -2.22036 -1.521862 5.520421e-007 3 1 a 5 a 10 s
+-0.09213257 -0.7642818 -3.257422 7.09319e-007 3 1 a 4 a 11 s
+-0.105197 -0.009572846 -2.086398 5.078743e-007 2 5 a 3 a
+-0.9269732 -1.021323 3.956327e-007 3 4 a 2 a 6 s
+-0.4142282 0.3185802 1.035584e-007 3 5 s 7 d 12 s
+0.889572 0.6337959 -6.045004e-007 3 6 d 8 s 16 s
+1.378443 2.025879 -1.250108e-006 4 7 s 13 s 14 s 15 s
+-2.94467 -3.658783 5.483058e-007 1 1 s
+-3.144513 -0.9519929 6.271002e-007 1 2 s
+-0.1743022 -4.168887 8.675068e-007 1 3 s
+-1.195711 1.098427 2.073701e-007 1 6 s
+2.495451 2.056465 4.249927e-006 1 8 s
+1.012186 2.572974 -0.9052721 1 8 s
+1.012177 2.572978 0.9052631 1 8 s
+1.657574 -0.1580704 -7.745563e-007 1 7 s
+
+rocedure TGLForm.SpeedButton1Click(Sender: TObject);
+
+ const KS=3.5;
+var sl:TStringList;
+    i,j,k,vi:integer;
+    s,s1:string;
+begin
+ if OpenDialog1.Execute then begin
+   sl:=TStringList.Create;
+   sl.LoadFromFile(OpenDialog1.FileName);
+   SetLength(Sphere, 16);
+for i := 0 to High(Sphere) do
+ with Sphere[i] do
+  begin
+    J:= 1;
+    s:=sl[i];
+
+    SPhere[i].x:=StoR(GetToken(s,j))*KS;
+    Sphere[i].y:=StoR(GetToken(s,j))*KS;
+    Sphere[i].z:=StoR(GetToken(s,j))*KS;
+    Sphere[i].r     := Random;
+   Sphere[i].g      := Random;
+   Sphere[i].b      := Random;
+   Sphere[i].Speed  := 0;
+   Sphere[i].Radius := 1;
+  end;
+   sl.Free;
+end;
+end;

@@ -1,0 +1,93 @@
+void DrawGLCylinder2(double *p1, double *p2 )	// Draw cube
+{
+	GLUquadricObj *cyl, *disk;  
+	cyl  = gluNewQuadric();
+	disk = gluNewQuadric();
+
+	double pi = 3.1415926535;
+	double r2d = 180.0/pi;	// radians to degrees conversion factor
+	double sf = 1.5;		// scale factor
+	double sfi = 1.0/sf;	// inverse scale factor
+
+	double rb = 0.09;	// radius of cylinder bottom
+	double rt = 0.09;	// radius of cylinder bottom
+	int dth = 10;		// no. of angular cylinder subdivsions 
+	int dz = 10;		// no. of cylinder subdivsions in z direction
+
+	// orientation vector 
+	double vx = p2[1]-p1[1];	//	component in x-direction
+	double vy = p2[2]-p1[2];	//	component in y-direction
+	double vz = p2[3]-p1[3];	//	component in z-direction
+
+	double v = sqrt( vx*vx + vy*vy + vz*vz );	// cylinder length
+		
+	// rotation vector, z x r  
+	double rx = -vy*vz;
+	double ry = +vx*vz;
+	double ax = 0.0;
+
+	double zero = 1.0e-3;
+	if (fabs(vz) < zero)
+	{
+		ax = r2d*acos( vx/v );	// rotation angle in x-y plane
+		if ( vx <= 0.0 ) ax = -ax;
+	}
+	else
+	{
+		ax = r2d*acos( vz/v );	// rotation angle
+		if ( vz <= 0.0 ) ax = -ax;
+	}
+
+//	Debug:
+//	cstr.Format("vz =%f", vz); 
+//	::MessageBox(NULL, cstr, "Information", MB_OK); 
+
+	glColor3f(1.0f, 0.0f, 0.5f);	// set cylinder color
+	
+	glPushMatrix();
+
+		glTranslated( p1[1], p1[2], p1[3] );	// translate to point 1
+
+		if (fabs(vz) < zero)
+		{
+			glRotated(90.0, 0, 1, 0.0);			// Rotate & align with x axis
+			glRotated(ax, -1.0, 0.0, 0.0);		// Rotate to point 2 in x-y plane
+		}
+		else
+		{
+			glRotated(ax, rx, ry, 0.0);			// Rotate about rotation vector
+		}
+
+		gluCylinder(cyl, rb, rt, v, dth, dz);	// draw side faces of cylinder
+		gluDisk( disk, 0.0, rb, dth, 1);		// draw bottom of cylinder
+
+	glPopMatrix();
+
+	glPushMatrix();
+
+		glTranslated( p2[1], p2[2], p2[3] );	// translate to point 2
+
+		if (fabs(vz) < zero)
+		{
+			glRotated(90.0, 0, 1, 0.0);			// Rotate & align with x axis
+			glRotated(ax, -1.0, 0.0, 0.0);		// Rotate to point 2 in the x-y plane
+		}
+		else
+		{
+			glRotated(ax, rx, ry, 0.0);			// Rotate about rotation vector
+		}
+
+		gluDisk( disk, 0.0, rt, dth, 1);		// draw top of cylinder
+	
+	glPopMatrix();
+
+	gluDeleteQuadric( cyl );
+	gluDeleteQuadric( disk );
+
+	// draw local axes
+	glScaled(sf, sf, sf);
+	glCallList( axes );
+	glScaled(sfi, sfi, sfi);
+
+	return;
+}
