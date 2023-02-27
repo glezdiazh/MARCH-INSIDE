@@ -162,8 +162,8 @@ PMID: 21468430.
 Fernandez P, González-Díaz H. 2D MI-DRAGON: a new predictor for protein-ligands
 interactions and theoretic-experimental studies of US FDA drug-target network,
 oxoisoaporphine inhibitors for MAO-A and human parasite proteins. Eur J Med
-Chem. 2011 Dec;46(12):5838-51. doi: 10.1016/j.ejmech.2011.09.045. Epub 2011 Oct
-1. PMID: 22005185.
+Chem. 2011 Dec;46(12):5838-51. doi: 10.1016/j.ejmech.2011.09.045. Epub 2011 Oct 1.
+PMID: 22005185.
 
 27: Prado-Prado F, García-Mera X, Escobar M, Alonso N, Caamaño O, Yañez M,
 González-Díaz H. 3D MI-DRAGON: new model for the reconstruction of US FDA drug-
