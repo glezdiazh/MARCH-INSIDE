@@ -7,6 +7,7 @@ Applications: In turn, these MI parameters can be used as input of Artificial In
 Derived Algorithms. MI algorithm is the basis for posterior softwares developmed a posteriori by other authors in co-authorship with Prof González-Díaz or independently. Some of these are: Sequence to Stars Networks (S2SNET) by C.R. Munteanu and González-Díaz H. https://github.com/muntisa/S2SNet); R-Markov Topological Indices (RMARKOVTI) by C.R. Munteanu https://github.com/muntisa/RMarkovTI, etc., S2SNET Phyton (PyS2SNET) by C.R. Munteanu https://github.com/muntisa/pyS2SNet.
 
 See references:
+
 01: González Díaz H, Olazabal E, Castañedo N, Sánchez IH, Morales A, Serrano HS,
 González J, de Armas RR. Markovian chemicals "in silico" design (MARCH-INSIDE),
 a promising approach for computer aided molecular design II: experimental and
