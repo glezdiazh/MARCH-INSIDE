@@ -1,0 +1,27 @@
+unit DataStr;
+
+interface
+
+uses
+  Windows, Messages, SysUtils, Variants, Classes, Graphics, Controls, Forms,
+  Dialogs, StdCtrls, Buttons, ExtCtrls;
+
+type
+  TDataStrF = class(TForm)
+    RadioGroup1: TRadioGroup;
+    Label1: TLabel;
+    BitBtn1: TBitBtn;
+  private
+    { Private declarations }
+  public
+    { Public declarations }
+  end;
+
+var
+  DataStrF: TDataStrF;
+
+implementation
+
+{$R *.dfm}
+
+end.

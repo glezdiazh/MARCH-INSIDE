@@ -1,0 +1,106 @@
+object Form1: TForm1
+  Left = 245
+  Top = 148
+  Width = 443
+  Height = 311
+  Caption = 'SMILES 2 CONNECTION TABLE'
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Edit1: TEdit
+    Left = 48
+    Top = 8
+    Width = 334
+    Height = 21
+    TabOrder = 0
+    Text = 'Type Smiles'
+  end
+  object check_smiles: TButton
+    Left = 48
+    Top = 48
+    Width = 75
+    Height = 25
+    Caption = 'Check'
+    TabOrder = 1
+    OnClick = check_smilesClick
+  end
+  object BitBtn1: TBitBtn
+    Left = 312
+    Top = 208
+    Width = 75
+    Height = 25
+    TabOrder = 2
+    OnClick = BitBtn1Click
+    Kind = bkClose
+  end
+  object Memo1: TMemo
+    Left = 168
+    Top = 48
+    Width = 217
+    Height = 145
+    Lines.Strings = (
+      'Atoms list')
+    ScrollBars = ssVertical
+    TabOrder = 3
+  end
+  object ClearMemo: TButton
+    Left = 48
+    Top = 96
+    Width = 73
+    Height = 25
+    Caption = 'Clear =>'
+    TabOrder = 4
+    OnClick = ClearMemoClick
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Top = 259
+    Width = 435
+    Height = 25
+    Panels = <>
+  end
+  object BitBtn2: TBitBtn
+    Left = 48
+    Top = 144
+    Width = 75
+    Height = 49
+    Caption = 'Open File'
+    TabOrder = 6
+    OnClick = BitBtn2Click
+    Glyph.Data = {
+      EE000000424DEE000000000000007600000028000000100000000F0000000100
+      0400000000007800000000000000000000001000000010000000000000000000
+      80000080000000808000800000008000800080800000C0C0C000808080000000
+      FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00CCCCCCCCCCCC
+      CCCC0000000000000CCC00777777777770CC0F0BFBFBFBFBF0CC0B0FBFBFBFBF
+      BF0C0FB0FBFBFBFBFB0C0BF0BFBFBFBFBFB00FBF0000000000000BFBFBFBFBFB
+      F0CC0FBFBFBFBFBFB0CC0BFBFBFB00000CCCC0BFBFB0CCCCCCCCCC00000CCCCC
+      CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC}
+    Layout = blGlyphTop
+  end
+  object Button1: TButton
+    Left = 184
+    Top = 208
+    Width = 75
+    Height = 25
+    Caption = 'Save'
+    TabOrder = 7
+    OnClick = Button1Click
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = 'Text File|*.txt ; *.smi|All Files|*.*'
+    Left = 488
+    Top = 72
+  end
+  object SaveDialog1: TSaveDialog
+    Left = 528
+    Top = 72
+  end
+end

@@ -1,0 +1,22 @@
+C12CCCCC1CCCC2
+C1CCC2(CCCCC2)CC1
+CC12C(CCCC2)CCCC1
+C12CCCC3C1C(CCC3)CCC2
+C1C2C1C2
+C1CC1
+[O-]C1=CC=CC=C1.[Na+]
+C1(C(C3CC(CCCC4)C4C3)C2CCCCC2)=CC=CC=C1 Especial
+CC(CC)C(C2CCCCC2)(C3CC(CCCC4)C4C3)C1=CC=CC=C1 Especial 2
+C=CC(C=C4)=C4C(C3CCCCC3)C2CC1CCCCC1C2
+O=[N+](C1=CC=CC=C1)[O-] caso especial x grupo nitro 
+
+0. detectar presencia de informacion estereoquimicia
+1. Ver si existen desconexiones (.)
+2. Leer cuantas ramificaciones exiten ('C')
+3. ver Presencia de []
+4. leer la secuencia en forma de maquina de estado
+5. detectar secuecia correcta de los enlace ( tabla de conexion )
+6. Ajustar valencias (CNSO)
+7. calcular indixes
+
+
