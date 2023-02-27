@@ -4,7 +4,7 @@ MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (G
 
 Applications: In turn, these MI parameters can be used as input of Artificial Intelligence / Machine Learning (AI/ML) algorithms in order to seek predictive models. MI parameters have been to predict properties of small-sized drugs, proteins sequences, proteins 3D structures, RNA secondary structures, metabolic networks, criminal causality networks, biological networks, social networks, etc. 
 
-Derived Algorithms. MI algorithm is the basis for posterior softwares developmed a posteriori by other authors in co-authorship with Prof González-Díaz or independently. Some of these are: Sequence to Stars Networks (S2SNET) by C.R. Munteanu and González-Díaz H. https://github.com/muntisa/S2SNet); R-Markov Topological Indices (RMARKOVTI) by C.R. Munteanu https://github.com/muntisa/RMarkovTI, etc., S2SNET Phyton (PyS2SNET) by C.R. Munteanu https://github.com/muntisa/pyS2SNet.
+Derived Algorithms. MI algorithm is the basis for posterior softwares developmed a posteriori by other authors in co-authorship with Prof González-Díaz or independently. Some of these are: Sequence to Stars Networks (S2SNET) by C.R. Munteanu and González-Díaz H. https://github.com/muntisa/S2SNet); R-Markov Topological Indices (RMARKOVTI) by C.R. Munteanu https://github.com/muntisa/RMarkovTI, S2SNET Phyton (PyS2SNET) by C.R. Munteanu https://github.com/muntisa/pyS2SNet, etc.
 
 See references:
 
