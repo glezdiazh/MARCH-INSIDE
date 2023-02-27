@@ -1,0 +1,59 @@
+procedure TForm1.Button1Click(Sender: TObject);
+begin
+  Excel:=CreateOleObject('Excel.Application');
+  Excel.Visible:=True;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  Excel.Workbooks.Open(GetCurrentDir+'\book1.xls');
+end;
+
+procedure TForm1.Button3Click(Sender: TObject);
+begin
+  Excel.Workbooks.Close;
+end;
+
+procedure TForm1.Button4Click(Sender: TObject);
+var
+  i, j: Integer;
+begin
+  for i:=1 to 4 do
+    for j:=1 to 2 do
+      StringGrid1.Cells[j,i]:=
+        Excel.ActiveSheet.Cells[i,j].Value;
+end;
+
+
+hiermit kann man überprüfen ob eines der Programme gestartet worden ist. 
+
+Die Units ComObj und ActiveX werden benötigt!
+
+
+function IsProgActive(sClassName: String): Boolean; 
+var 
+  ClassID: TCLSID; 
+  Unknown: IUnknown; 
+begin 
+  try 
+    ClassID := ProgIDToClassID(sClassName); 
+    Result := GetActiveObject(ClassID, nil, Unknown) = S_OK; 
+  except 
+    Result := False; 
+  end; 
+end; 
+
+procedure TForm1.Button1Click(Sender: TObject); 
+begin 
+  if IsProgActive('Word.Application') then 
+    ShowMessage('Word läuft'); 
+  if IsProgActive('Excel.Application') then 
+    ShowMessage('Excel läuft'); 
+  if IsProgActive('Outlook.Application') then 
+    ShowMessage('Outlook läuft'); 
+  if IsProgActive('Access.Application') then 
+    ShowMessage('Access läuft'); 
+  if IsProgActive('Powerpoint.Application') then 
+    ShowMessage('Powerpoint läuft'); 
+end;
+
