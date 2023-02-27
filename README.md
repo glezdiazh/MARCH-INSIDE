@@ -1,6 +1,6 @@
 # MARCH-INSIDE
 MARCH-INSIDE: Markov Chain Invariants for Networks Simulation and Design
-MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (Gonzaléz-Díaz et al.) as early as 2002 for the calculation of Markov Invariants (Moments, Shanon entropies, Mean Markov values) of molecular graphs and complext netxorks using a Markov chain stchastic approach. The main authors are H. Gónzalez-Díaz (algorithm and software design, applications, main author of papers), R. Molina (software programming co-author of papers). 
+MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (Gonzaléz-Díaz et al.) as early as 2002 for the calculation of Markov Invariants (Moments, Shanon entropies, Mean Markov values) of molecular graphs and complext netxorks using a Markov chain stchastic approach. The main authors are H. Gónzalez-Díaz (algorithm and software design, applications, main author of papers), R. Molina (software programming co-author of papers). In case you want to develop new collaborations related to MI algorith please do not hesitate to contact us at: https://www.linkedin.com/in/humbertgdiaz/
 
 Applications: In turn, these MI parameters can be used as input of Artificial Intelligence / Machine Learning (AI/ML) algorithms in order to seek predictive models. MI parameters have been to predict properties of small-sized drugs, proteins sequences, proteins 3D structures, RNA secondary structures, metabolic networks, criminal causality networks, biological networks, social networks, etc. 
 
