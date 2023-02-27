@@ -2,14 +2,20 @@
 MARCH-INSIDE: Markov Chain Invariants for Networks Simulation and Design
 MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (Gonzaléz-Díaz et al.) as early as 2002 for the calculation of Markov Invariants (Moments, Shanon entropies, Mean Markov values) of molecular graphs and complext netxorks using a Markov chain stchastic approach. In case you want to develop new collaborations, applications, etc. related to MI algorith please do not hesitate to contact us at: https://www.linkedin.com/in/humbertgdiaz/
 
-The main authors are:
+Main authors contributions:
+
 H. Gónzalez-Díaz (algorithm and software design, AI/ML applications, main author of papers, https://github.com/glezdiazh), 
+
 I. Sánchez-Hernandez (software programming for version 1.0 and higher and co-author of papers, not github profile available), 
+
 R. Molina (software programming for version 2.0 and higher and co-author of papers, https://github.com/rmrsint). 
 
-Applications: MI parameters can be used to study the Markov Chain stochastic behaviour of graph or network-like systems, quantify the structure of complex biomo-lecular systems, and/or as input of Artificial Intelligence / Machine Learning (AI/ML) algorithms in order to seek predictive models. MI parameters have been to predict properties of small-sized drugs, proteins sequences, proteins 3D structures, RNA secondary structures, metabolic networks, criminal causality networks, biological networks, social networks, etc. 
+Applications: 
+MI parameters can be used to study the Markov Chain stochastic behaviour of graph or network-like systems, quantify the structure of complex biomo-lecular systems, and/or as input of Artificial Intelligence / Machine Learning (AI/ML) algorithms in order to seek predictive models. MI parameters have been to predict properties of small-sized drugs, proteins sequences, proteins 3D structures, RNA secondary structures, metabolic networks, criminal causality networks, biological networks, social networks, etc. 
 
-Derived Algorithms. MI algorithm is the basis for posterior softwares developmed a posteriori by other authors in co-authorship with Prof González-Díaz or independently. Some of these are: Sequence to Stars Networks (S2SNET) by C.R. Munteanu and González-Díaz H. https://github.com/muntisa/S2SNet); R-Markov Topological Indices (RMARKOVTI) by C.R. Munteanu https://github.com/muntisa/RMarkovTI, S2SNET Phyton (PyS2SNET) by C.R. Munteanu https://github.com/muntisa/pyS2SNet, etc.
+Posterior Algorithms: 
+
+MI algorithm is the basis for posterior softwares developmed a posteriori by other authors in co-authorship with Prof González-Díaz or independently. Some of these are: Sequence to Stars Networks (S2SNET) by C.R. Munteanu and González-Díaz H. https://github.com/muntisa/S2SNet); R-Markov Topological Indices (RMARKOVTI) by C.R. Munteanu https://github.com/muntisa/RMarkovTI, S2SNET Phyton (PyS2SNET) by C.R. Munteanu https://github.com/muntisa/pyS2SNet, etc.
 
 See references:
 
