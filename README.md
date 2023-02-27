@@ -1,6 +1,11 @@
 # MARCH-INSIDE
 MARCH-INSIDE: Markov Chain Invariants for Networks Simulation and Design
-MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (Gonzaléz-Díaz et al.) as early as 2002 for the calculation of Markov Invariants (Moments, Shanon entropies, Mean Markov values) of molecular graphs and complext netxorks using a Markov chain stchastic approach. The main authors are H. Gónzalez-Díaz (algorithm and software design, applications, main author of papers), R. Molina (software programming co-author of papers). In case you want to develop new collaborations related to MI algorith please do not hesitate to contact us at: https://www.linkedin.com/in/humbertgdiaz/
+MARCH-INSIDE (MI), is a well-known method introduced by Prof. Humbert G Díaz (Gonzaléz-Díaz et al.) as early as 2002 for the calculation of Markov Invariants (Moments, Shanon entropies, Mean Markov values) of molecular graphs and complext netxorks using a Markov chain stchastic approach. In case you want to develop new collaborations, applications, etc. related to MI algorith please do not hesitate to contact us at: https://www.linkedin.com/in/humbertgdiaz/
+
+The main authors are:
+H. Gónzalez-Díaz (algorithm and software design, AI/ML applications, main author of papers, https://github.com/glezdiazh), 
+I. Sánchez-Hernandez (software programming for version 1.0 and higher and co-author of papers, not github profile available), 
+R. Molina (software programming for version 2.0 and higher and co-author of papers, https://github.com/rmrsint). 
 
 Applications: MI parameters can be used to study the Markov Chain stochastic behaviour of graph or network-like systems, quantify the structure of complex biomo-lecular systems, and/or as input of Artificial Intelligence / Machine Learning (AI/ML) algorithms in order to seek predictive models. MI parameters have been to predict properties of small-sized drugs, proteins sequences, proteins 3D structures, RNA secondary structures, metabolic networks, criminal causality networks, biological networks, social networks, etc. 
 
